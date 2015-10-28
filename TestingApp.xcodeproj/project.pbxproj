@@ -21,6 +21,7 @@
 		DA944BE31BE0C855008E9AA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA944BE21BE0C855008E9AA2 /* Assets.xcassets */; };
 		DA944BE71BE0C855008E9AA2 /* WatingWatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DA944BCD1BE0C855008E9AA2 /* WatingWatchApp.app */; };
 		DA944BF21BE0CB17008E9AA2 /* Printer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA944BF11BE0CB17008E9AA2 /* Printer.swift */; };
+		DAE77028F2AD01E77FA77B34 /* Pods_TestingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F70885E08A560115C6388464 /* Pods_TestingApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9EF6D1327286F2E1AA8A6B0D /* Pods-TestingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestingApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestingApp/Pods-TestingApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DA944BB11BE0C801008E9AA2 /* TestingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA944BB51BE0C801008E9AA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DA944BB71BE0C801008E9AA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,6 +91,8 @@
 		DA944BF11BE0CB17008E9AA2 /* Printer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Printer.swift; sourceTree = "<group>"; };
 		DA944BF31BE0D0DF008E9AA2 /* TestingApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TestingApp.entitlements; sourceTree = "<group>"; };
 		DA944BF41BE0D199008E9AA2 /* WatingWatchApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = WatingWatchApp.entitlements; sourceTree = "<group>"; };
+		DE62DE892AD6650805E09268 /* Pods-TestingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestingApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestingApp/Pods-TestingApp.release.xcconfig"; sourceTree = "<group>"; };
+		F70885E08A560115C6388464 /* Pods_TestingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE77028F2AD01E77FA77B34 /* Pods_TestingApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +114,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36B9FA47B71A3708C49374D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F70885E08A560115C6388464 /* Pods_TestingApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FA09EDA6236C67CE31C5D4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EF6D1327286F2E1AA8A6B0D /* Pods-TestingApp.debug.xcconfig */,
+				DE62DE892AD6650805E09268 /* Pods-TestingApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DA944BA81BE0C801008E9AA2 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +138,8 @@
 				DA944BCE1BE0C855008E9AA2 /* WatingWatchApp */,
 				DA944BDD1BE0C855008E9AA2 /* WatingWatchApp Extension */,
 				DA944BB21BE0C801008E9AA2 /* Products */,
+				3FA09EDA6236C67CE31C5D4F /* Pods */,
+				36B9FA47B71A3708C49374D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,10 +209,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA944BC81BE0C801008E9AA2 /* Build configuration list for PBXNativeTarget "TestingApp" */;
 			buildPhases = (
+				6920EE17C04EBC07AC9A462A /* Check Pods Manifest.lock */,
 				DA944BAD1BE0C801008E9AA2 /* Sources */,
 				DA944BAE1BE0C801008E9AA2 /* Frameworks */,
 				DA944BAF1BE0C801008E9AA2 /* Resources */,
 				DA944BEF1BE0C855008E9AA2 /* Embed Watch Content */,
+				3B0AF8C36F8E849398D2924F /* Embed Pods Frameworks */,
+				E79B7FB52A1EE4F989F8DC5E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -316,6 +343,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B0AF8C36F8E849398D2924F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestingApp/Pods-TestingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6920EE17C04EBC07AC9A462A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E79B7FB52A1EE4F989F8DC5E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestingApp/Pods-TestingApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA944BAD1BE0C801008E9AA2 /* Sources */ = {
@@ -463,6 +538,7 @@
 		};
 		DA944BC91BE0C801008E9AA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EF6D1327286F2E1AA8A6B0D /* Pods-TestingApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -481,6 +557,7 @@
 		};
 		DA944BCA1BE0C801008E9AA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE62DE892AD6650805E09268 /* Pods-TestingApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -585,6 +662,7 @@
 				DA944BCA1BE0C801008E9AA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA944BE81BE0C855008E9AA2 /* Build configuration list for PBXNativeTarget "WatingWatchApp Extension" */ = {
 			isa = XCConfigurationList;
@@ -593,6 +671,7 @@
 				DA944BEA1BE0C855008E9AA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA944BEC1BE0C855008E9AA2 /* Build configuration list for PBXNativeTarget "WatingWatchApp" */ = {
 			isa = XCConfigurationList;
@@ -601,6 +680,7 @@
 				DA944BEE1BE0C855008E9AA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
