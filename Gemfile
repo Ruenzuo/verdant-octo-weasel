@@ -1,5 +1,5 @@
 source "https://rubygems.org"
 
-gem "cocoapods"
+gem "cocoapods", "~> 0.38.0"
 gem "rake"
 gem "shenzhen"
